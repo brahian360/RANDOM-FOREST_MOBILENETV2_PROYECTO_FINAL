@@ -1,0 +1,44 @@
+--- Resumen del dataset de características ---
+Total de muestras: 1407
+Número de clases: 4
+Clases: ['Cloudy', 'Rain', 'Shine', 'Sunrise']
+Shape de X: (1407, 108)
+
+Tamaño train: 1125
+Tamaño test: 282
+
+Entrenando Random Forest...
+
+--- Métricas detalladas por clase ---
+              precision  recall  f1-score  support
+Cloudy            0.925   0.886     0.905   70.000
+Rain              0.957   0.957     0.957   70.000
+Shine             0.892   0.943     0.917   70.000
+Sunrise           0.972   0.958     0.965   72.000
+accuracy          0.936   0.936     0.936    0.936
+macro avg         0.937   0.936     0.936  282.000
+weighted avg      0.937   0.936     0.936  282.000
+
+--- Matriz de confusión ---
+         Cloudy  Rain  Shine  Sunrise
+Cloudy       62     3      5        0
+Rain          2    67      1        0
+Shine         2     0     66        2
+Sunrise       1     0      2       69
+
+--- Top 10 características más importantes según el Random Forest ---
+skew_S           0.060174
+homogeneity_0    0.057950
+mean_S           0.050045
+mean_B           0.045689
+hist_B_14        0.040017
+mean_V           0.034833
+hist_B_13        0.031856
+skew_H           0.029490
+kurt_S           0.025349
+hist_R_15        0.024830
+
+--- Resumen general del modelo Random Forest ---
+Precisión global en test: 93.62%
+F1-score ponderado: 0.936
+Tiempo promedio de inferencia por muestra: 0.00013 segundos

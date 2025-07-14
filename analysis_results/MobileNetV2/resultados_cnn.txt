@@ -1,0 +1,27 @@
+🔍 Evaluación del modelo MobileNetV2
+Precisión en validación final: 95.37%
+Pérdida en validación final: 0.1461
+
+--- Reporte de clasificación por clase ---
+              precision    recall  f1-score   support
+
+      Cloudy       0.95      0.87      0.91        70
+        Rain       0.97      0.99      0.98        70
+       Shine       0.90      1.00      0.95        70
+     Sunrise       1.00      0.96      0.98        71
+
+    accuracy                           0.95       281
+   macro avg       0.96      0.95      0.95       281
+weighted avg       0.96      0.95      0.95       281
+
+
+--- Matriz de confusión ---
+         Cloudy  Rain  Shine  Sunrise
+Cloudy       61     2      7        0
+Rain          1    69      0        0
+Shine         0     0     70        0
+Sunrise       2     0      1       68
+
+--- Resumen general del modelo MobileNetV2 ---
+Precisión global en validación: 95.37%
+F1-score ponderado: 0.953

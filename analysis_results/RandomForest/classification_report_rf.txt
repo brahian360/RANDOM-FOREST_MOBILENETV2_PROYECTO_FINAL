@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+      Cloudy       0.93      0.89      0.91        70
+        Rain       0.96      0.96      0.96        70
+       Shine       0.89      0.94      0.92        70
+     Sunrise       0.97      0.96      0.97        72
+
+    accuracy                           0.94       282
+   macro avg       0.94      0.94      0.94       282
+weighted avg       0.94      0.94      0.94       282
